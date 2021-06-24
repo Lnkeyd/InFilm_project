@@ -27,15 +27,22 @@ A {
 
 header {
     background-color: #F1F5F9;
+    display: flex;
+    justify-content: center;
 }
 
 .header_wrap {
     padding-top: 88px;
-    padding-left: 370px;
     display: flex;
+    justify-content: space-between;
+    width: 1205px;
+    // padding-left: 370px;
+    &_logo {
+        margin-left: 20px;
+    }
     &_container {
-       margin-left: 386px;
-       margin-right: 360px;
+    //    margin-left: 386px;
+    //    margin-right: 360px;
        width: 695px;
        display: flex;
        justify-content: space-evenly;
@@ -83,13 +90,14 @@ header {
 .main {
     margin-top: -155px;
     background-image: url(img/bg.svg);
+    background-size: cover;
     background-color: #F1F5F9;
-    // height: 728px;
     height: 883px;
     &_container {
         padding-top: 277px;
-        padding-left: 370px;
+        padding-left: 85px;
         display: flex;
+        justify-content: center;
         &_text {
             width: 580px;
             &_label {
@@ -128,7 +136,7 @@ header {
         }
         }
         &_image {
-            margin-left: 90px;
+            margin-left: 30px;
             width: 642px;
             height: 468px;
             align-self: flex-end;
@@ -214,12 +222,13 @@ header {
     &_container {
         display: flex;
         align-items: flex-end;
+        justify-content: center;
         height: 580px;
         &_image {
-            margin-left: 190px;
+            // margin-left: 190px;
         }
         &_text {
-            margin-left: 70px;
+            margin-left: 75px;
             width: 580px;
             &_label {
                 width: 188px;
@@ -272,12 +281,13 @@ header {
 
 .quality {
     background-color: #F1F5F9;
-    height: 837px;
+    height: 800px;
     &_container {
         padding-top: 100px;
         display: flex;
+        justify-content: center;
         &_text{
-            margin-left: 370px;
+            // margin-left: 370px;
             &_label {
                 width: 107px;
                 height: 37px;
@@ -348,11 +358,12 @@ header {
 }
 
 .reviews {
-    height: 1000px;
+    height: 900px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     &_header {
-        margin-top: 100px;
+        margin-top: 70px;
         font-weight: 600;
         font-size: 48px;
         text-align: center;
@@ -360,11 +371,11 @@ header {
     &_card {
         width: 1173px;
         height: 524px;
-        margin-left: 373px;
-        margin-top: 82px;
+        margin-top: 62px;
         box-shadow: 2px 8px 100px rgba(82, 69, 176, 0.2);
         border-radius: 5px;
         display: flex;
+        align-self: center;
         &_text {
             margin-left: 222px;
             margin-top: 78px;
@@ -409,7 +420,7 @@ header {
     }
     &_btnwrap {
         display: flex;
-        margin-top: 70px;
+        margin-top: 40px;
         align-self: center;
         &_prev {
             width: 66px;
@@ -456,7 +467,7 @@ header {
         justify-content: center;
         gap: 9px;
         &_photo {
-            width: 33%
+            width: 33%;
         }
     }
 }
@@ -607,7 +618,7 @@ header {
 }
 
 footer {
-    height: 178px;
+    height: 150px;
     padding-top: 100px;
     background-color: #F1F5F9;
     .container {
