@@ -36,9 +36,10 @@ header {
     display: flex;
     justify-content: space-between;
     width: 1205px;
+    margin-left: 70px;
     // padding-left: 370px;
     &_logo {
-        margin-left: 20px;
+        // margin-left: 20px;
     }
     &_container {
     //    margin-left: 386px;
@@ -136,7 +137,7 @@ header {
         }
         }
         &_image {
-            margin-left: 30px;
+            // margin-left: 30px;
             width: 642px;
             height: 468px;
             align-self: flex-end;
@@ -641,6 +642,74 @@ footer {
         &_secondline{
             color: #7E868E;
             margin-top: 22px;
+        }
+    }
+}
+
+
+@media screen and (max-width:1500px) {
+    .header {
+        &_wrap {
+            width: 77vw;
+        }
+    }
+    .main {
+        &_container {
+            padding-top: 294px;
+            padding-left: 150px;
+            &_text {
+                width: 555px;
+                &_header {
+                    font-size: 44px;
+                }
+            }
+            &_image {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+    .catalog {
+        &_header {
+            font-size: 40px;
+        }
+        &_container {
+            &_card {
+                display: flex;
+                flex-direction: column;
+                margin-left: 0;
+                margin-right: 0;
+                &_img {
+                    align-content: flex-end;
+                    width: 330px;
+                    margin: 0 0;
+                }
+                &_block {
+                    width: 310px;
+                    height: 365px;
+                }
+            }
+        }
+    }
+    .individuality {
+        padding-top: 20px;
+        &_container {
+            height: 540px;
+            &_image {
+                width: 30vw;
+            }
+            &_text {
+                width: 500px;
+                &_header {
+                    font-size: 37px;
+                }
+                &_descr {
+                    font-size: 19px;
+                }
+                &_wrap {
+                    margin-top: 12px;
+                }
+            }
         }
     }
 }
