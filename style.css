@@ -641,10 +641,6 @@ header {
           transform: rotate(180deg);
 }
 
-.clients {
-  height: 908px;
-}
-
 .clients_header {
   margin-top: 100px;
   font-weight: 600;
@@ -677,8 +673,8 @@ header {
 }
 
 .form {
+  margin-top: 70px;
   height: 574px;
-  padding-top: 100px;
   background-color: #F1F5F9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1045,9 +1041,6 @@ footer .container_secondline {
   }
   .reviews_btnwrap_next {
     margin-left: 12px;
-  }
-  .clients {
-    height: 908px;
   }
   .clients_header {
     font-size: 37px;

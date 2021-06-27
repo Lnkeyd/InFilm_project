@@ -449,7 +449,6 @@ header {
 }
 
 .clients {
-    height: 908px;
     &_header {
         margin-top: 100px;
         font-weight: 600;
@@ -475,8 +474,8 @@ header {
 }
 
 .form {
+    margin-top: 70px;
     height: 574px;
-    padding-top: 100px;
     background-color: #F1F5F9;
     display: flex;
     justify-content: center;
@@ -787,7 +786,6 @@ footer {
         }
     }
     .clients {
-        height: 908px;
         &_header {
             font-size: 37px;
         }
