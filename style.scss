@@ -793,6 +793,11 @@ footer {
         &_subheader {
             font-size: 23px;
         }
+        &_wrap {
+            &_photo {
+                width: calc(100%/3 - 9*2px);
+            }
+        }
     }
     .form {
         &_card {

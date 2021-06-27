@@ -1051,6 +1051,9 @@ footer .container_secondline {
   .clients_subheader {
     font-size: 23px;
   }
+  .clients_wrap_photo {
+    width: calc(100%/3 - 9*2px);
+  }
   .form_card {
     width: 80%;
   }
