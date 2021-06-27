@@ -641,6 +641,10 @@ header {
           transform: rotate(180deg);
 }
 
+.clients {
+  height: 720px;
+}
+
 .clients_header {
   margin-top: 100px;
   font-weight: 600;
