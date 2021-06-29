@@ -170,6 +170,7 @@ header {
             }
             &_block {
                 background: #FFFFFF;
+                margin: auto;
                 width: 335px;
                 height: 361px;
                 box-shadow: 0px 4px 22px rgba(82, 69, 176, 0.18);
@@ -654,6 +655,7 @@ footer {
         }
     }
     .main {
+        height: 983px;
         &_container {
             padding-top: 294px;
             padding-left: 150px;
@@ -664,13 +666,14 @@ footer {
                     line-height: 1.3;
                 }
                 &_descr {
-                    font-size: 19px;
+                    font-size: 17px;
                 }
             }
             &_image {
                 width: 50%;
                 height: 50%;
-                padding-right: 60px;
+                padding-right: 30px;
+                align-self: center;
             }
         }
     }
@@ -831,6 +834,346 @@ footer {
                     height: 72px;
                     font-size: 15px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .header_wrap {
+        &_container {
+            padding-top: 5px;
+            justify-content: space-around;
+            &_email_text, &_map_text, &_phone_container_descr {
+                font-size: 10px;
+            }
+            &_map {
+                width: 160px;
+            }
+            &_email, &_map {
+                padding-left: 10px;
+            }
+            &_phone {
+                &_container {
+                    &_number {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+    .main {
+        height: 730px;
+        margin-top: -187px;
+        &_container {
+            padding-left: 126px;
+            &_text {
+                &_label {
+                    width: 157px;
+                    height: 28px;
+                    font-size: 9px;
+                }
+                &_header {
+                    font-size: 23px;
+                }
+                &_descr {
+                    @media screen and (min-width: 900px){
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+                &_button {
+                    @media screen and (min-width: 900px){
+                        width: 230px;
+                        height: 70px;
+                    }
+                    margin-top: 27px;
+                    width: 200px;
+                    height: 50px;
+                    font-size: 14px;
+                }
+            }
+            &_image {
+                align-self: flex-end;
+                width: 50%;
+                margin-left: 20px;
+            }
+        }
+    }
+    .catalog {
+        height: 770px;
+        &_header {
+            font-size: 23px;
+            padding-top: 50px;
+        }
+        &_container {
+            margin-top: 60px;
+            &_card {
+                width: 258px;
+                height: 550px;
+                &_block {
+                    margin: auto;
+                    width: 218px;
+                    height: 300px;
+                    &_subheader{
+                        margin-top: 25px;
+                        margin-left: 22px;
+                        font-size: 20px;
+                    }
+                    &_descr {
+                        font-size: 14px;
+                        margin-left: 22px;
+                        margin-top: 30px;
+                        width: 180px;
+                    }
+                    &_price {
+                        font-size: 22px;
+                        margin-left: 22px;
+                        margin-top: 17px;
+                    }
+                    &_btn {
+                        margin-left: 22px;
+                        font-size: 12px;
+                    }
+                }
+                &_img {
+                    margin: auto;
+                    width: 190px;
+                }
+            }
+        }
+    }
+    .individuality {
+        &_container {
+            height: 312px;
+            margin-left: 54px;
+            &_image {
+                align-self: center;
+            }
+            &_text {
+                width: 408px;
+                margin-left: 64px;
+                &_label {
+                    width: 157px;
+                    height: 28px;
+                    font-size: 9px;
+                }
+                &_header {
+                    font-size: 23px;
+                }
+                &_descr {
+                    @media screen and (min-width: 900px){
+                        font-size: 14px;
+                    }
+                    width: 300px;
+                    font-size: 12px;
+                    line-height: 15px;
+                    margin-top: 20px;
+                }
+                &_wrap {
+                    width: auto;
+                    &_button {
+                        @media screen and (min-width: 900px){
+                            width: 200px;
+                            height: 55px;
+                            font-size: 14px;
+                        }
+                        margin-top: 27px;
+                        width: 150px;
+                        height: 50px;
+                        font-size: 12px;
+                    }
+                    &_descr {
+                        @media screen and (min-width: 900px){
+                            margin-top: 36px;
+                            font-size: 12px;
+                            width: auto;
+                        }
+                        width: 150px;
+                        font-size: 10px;
+                        margin-top: 33px;
+                    }
+                }
+            }
+        }
+    }
+    .quality {
+        height: 494px;
+        &_container {
+            padding-top: 56px;
+            &_text {
+                width: 400px;
+                &_label {
+                    width: 100px;
+                    height: 28px;
+                    font-size: 9px;
+                }
+                &_header {
+                    font-size: 23px;
+                }
+                &_list {
+                    margin-bottom: 14px;
+                    &_icon {
+                        width: 6px;
+                        height: 6px;
+                    }
+                    &_text {
+                        width: 231px;
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                }
+                &_wrap {
+                    margin-top: 14px;
+                    &_btn {
+                        @media screen and (min-width: 900px){
+                            width: 177px;
+                            height: 55px;
+                            font-size: 14px;
+                        }
+                        margin-top: 27px;
+                        width: 150px;
+                        height: 50px;
+                        font-size: 12px;
+                    }
+                    &_descr {
+                        @media screen and (min-width: 900px){
+                            margin-top: 32px;
+                            font-size: 12px;
+                            width: 200px;
+                        }
+                        width: 150px;
+                        font-size: 10px;
+                        line-height: 1.3;
+                        margin-top: 33px;
+                    }
+                }
+            }
+            &_img {
+                @media screen and (min-width: 900px){
+                    margin-top: 50px;
+                    margin-bottom: 0;
+                }
+                margin-bottom: 12px;
+                margin-left: 16px;
+            }
+        }
+    }
+    .reviews {
+        height: 684px;
+        &_header {
+            font-size: 23px;
+        }
+        &_card {
+            width: 700px;
+            height: 414px;
+            &_text {
+                margin-left: 48px;
+                &_quote {
+                    width: 20px;
+                    height: 20px;
+                }
+                &_subheader {
+                    margin-top: 19px;
+                    font-size: 22px;
+                }
+                &_descr {
+                    width: 348px;
+                    font-size: 12px;
+                }
+                &_link {
+                    font-size: 12px;
+                    width: 92px;
+                }
+            }
+            &_client {
+                margin-left: 80px;
+                margin-top: 87px;
+                &_name {
+                    font-size: 14px;
+                }
+                &_city {
+                    font-size: 14px;
+                }
+            }
+        }
+        &_btnwrap {
+            margin-top: 30px;
+            &_prev, &_next {
+                width: 40px;
+                height: 40px;
+                &_img {
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+        }
+    }
+    .clients {
+        &_header {
+            font-size: 23px;
+            margin-top: 50px;
+        }
+        &_subheader {
+            font-size: 16px;
+        }
+    }
+    .form {
+        height: 465px;
+        &_card {
+            border-width: 4px;
+            height: 324px;
+            &_header {
+                font-size: 21px;
+            }
+            &_subheader {
+                font-size: 14px;
+            }
+            &_wrap {
+                margin-top: 8px;
+                &_number, &_email {
+                    >input::placeholder{
+                        font-size: 12px;
+                    }
+                }
+                &_number_input {
+                    width: 130px;
+                    height: 55px;
+                    font-size: 12px;
+                    ::placeholder {
+                        font-size: 12px;
+                    }
+                }
+                input::placeholder {
+                    font-size: 12px;
+                }
+                &_email_input{
+                    width: 130px;
+                    height: 55px;
+                    font-size: 12px;
+                }
+                &_btn {
+                    width: 150px;
+                    height: 55px;
+                    font-size: 12px;
+                }
+            }
+            &_container {
+                &_cookies {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+    footer {
+        .container {
+            &_firstline, &_secondline {
+                font-size: 10px;
+            }
+            &_firstline {
+                width: 480px;
             }
         }
     }
