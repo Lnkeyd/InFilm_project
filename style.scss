@@ -1218,6 +1218,9 @@ footer {
             padding-left: 0;
             flex-direction: column-reverse;
             &_text {
+                @media screen and (max-width:650px) {
+                    width: 352px;
+                }
                 width: 450px;
                 align-self: center;
                 margin-left: 20px;
