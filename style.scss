@@ -1,6 +1,8 @@
 $label: #F2F6FA;
 $first-color: #5245B0;
 $second-color:  #FED84C;
+$first-hover: #433899;
+$second-hover:  #e9c440;
 
 ::placeholder {
     color: #7E868E;
@@ -425,6 +427,7 @@ header {
         margin-top: 40px;
         align-self: center;
         &_prev {
+            cursor: pointer;
             width: 66px;
             height: 66px;
             border-radius: 100%;
@@ -434,6 +437,7 @@ header {
             align-items: center;
         }
         &_next {
+            cursor: pointer;
             margin-left: 20px;
             width: 66px;
             height: 66px;
@@ -1193,6 +1197,36 @@ footer {
                 padding-top: 0;
                 flex-direction: column;
                 width: auto;
+                @media screen and (max-width:710px) {
+                    flex-direction: row;
+                    align-items: center;
+                    &_email{
+                        &_ico {
+                            width: 24px;
+                        }
+                        &_text {
+                            display: none;
+                        }
+                    }
+                    &_map {
+                        &_ico {
+                            width: 18px;
+                        }
+                        width: fit-content;
+                        &_text {
+                            display: none;
+                        }
+                    }
+                    &_phone {
+                        &_ico {
+                            margin-bottom: 8px;
+                            width: 24px;
+                        }
+                        &_container {
+                            display: none;
+                        }
+                    }
+                }
                 &_email {
                     padding-bottom: 8px;
                     &_text {
@@ -1248,7 +1282,7 @@ footer {
         height: 1290px;
         &_header {
             margin-bottom: 80px;
-            padding-left: 30px;
+            padding-left: 18px;
         }
         &_container {
             flex-direction: column;
@@ -1447,6 +1481,7 @@ footer {
                 width: 190px;
                 height: 40px;
                 display: flex;
+                align-items: flex-start;
                 margin: 0 auto;
                 margin-top: 24px;
             }
@@ -1455,6 +1490,7 @@ footer {
     footer {
         .container {
             &_firstline {
+                width: auto;
                 flex-direction: column;
                 align-items: center;
                 &_personaldata, &_support {
@@ -1466,5 +1502,171 @@ footer {
 }
 
 @media screen and (max-width: 520px) {
-    
+    .main {
+        height: 800px;
+        &_container {
+            &_text {
+                width: 244px;
+                margin-left: 50px;
+                &_button {
+                    height: 60px;
+                    margin-right: 45px;
+                }
+            }
+            &_image {
+                margin-left: 40px;
+            }
+        }
+    }
+    .catalog {
+        height: 740px;
+        &_header {
+            margin-bottom: 10px;
+        }
+        &_container {
+            width: auto;
+            &_card {
+                width: 198px;
+                flex-direction: column;
+                margin: 0 auto;
+                &_img {
+                    width: 200px;
+                    margin-left: 10px;
+                }
+                &_block {
+                    margin: 0 auto;
+                    margin-top: -23px;
+                }
+            }
+            >#catalog2 {
+                flex-direction: column;
+            }
+            >#catalog2, #catalog3 {
+                display: none;
+            }
+        }
+        &_btnwrap {
+            margin-top: 30px;
+            &_prev, &_next {
+                background-color: $first-color;
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                &_img {
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+        }
+    }
+    .individuality {
+        height: 478px;
+        &_container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin: 0 0;
+            padding-left: 0;
+            padding-top: 88px;
+            &_text {
+                width: 244px;
+                margin-left: 50px;
+                &_header {
+                    width: 244px;
+                }
+                &_descr {
+                    width: 244px;
+                }
+                &_wrap {
+                    width: 180px;
+                    &_descr {
+                        display: none;
+                    }
+                }
+            }
+            &_image {
+                margin-left: 24px;
+            }
+        }
+    }
+    .quality {
+        height: 620px;
+        &_container {
+            &_text {
+                width: 244px;
+                &_header {
+                    width: 244px;
+                }
+                &_list {
+                    width: 200px;
+                    margin-bottom: 37px;
+                    &_icon {
+                        width: 27px;
+                        height: 14px;
+                    }
+                }
+                &_wrap {
+                    width: 200px;
+                    &_descr {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .reviews {
+        &_header {
+            font-size: 21px;
+        }
+        &_card {
+            height: 324px;
+            &_text {
+                &_quote {
+                    display: none;
+                }
+            }
+            &_client {
+                width: 100px;
+                margin-top: 20px;
+                text-align: center;
+                &_name {
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+    .clients {
+        height: fit-content;
+        &_header {
+            font-size: 20px;
+        }
+        &_subheader {
+            font-size: 12px;
+        }
+        &_wrap {
+            margin-top: 60px;
+            &_photo {
+                width: 100%;
+            }
+        }
+    }
+    .form {
+        &_card {
+            width: 258px;
+            margin-top: 20px;
+            &_header {
+                width: 244px;
+            }
+            &_container {
+                align-items: flex-start;
+            }
+        }
+    }
+    footer {
+        .container {
+            &_firstline, &_secondline {
+                font-size: 8px;
+            }
+        }
+    }
 }
