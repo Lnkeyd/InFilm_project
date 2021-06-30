@@ -652,8 +652,10 @@ footer {
 }
 
 
-@media screen and (min-width:768) {
-    
+@media screen and (min-width:520px) {
+    .catalog_btnwrap {
+        display: none;
+    }
 }
 
 @media screen and (max-width:1500px) {
@@ -1371,16 +1373,24 @@ footer {
     .quality {
         height: 488px;
         &_container {
+            // @media screen and (min-width:574px) and (max-width:768px){
+            //     margin-left: -32px;
+            // }
             display: flex;
             flex-direction: column-reverse;
             align-items: center;
-            margin-left: 50px;
+            margin-left: -50px;
             &_img {
                 display: none;
             }
             &_text {
-                @media screen and (max-width:620px) {
-                    width: 365px;
+                margin-left: 82px;
+                @media screen and (max-width:573px) {
+                    width: 340px;
+                    margin-left: 102px;
+                }
+                @media screen and (max-width:520px) {
+                    margin-left: 5px;
                 }
                 width: 428px;
                 margin-top: -20px;
@@ -1446,7 +1456,7 @@ footer {
     .clients {
         &_wrap {
             &_photo {
-                width: 48%;
+                width: 48vw;
             }
         }
     }
@@ -1507,14 +1517,14 @@ footer {
         &_container {
             &_text {
                 width: 244px;
-                margin-left: 50px;
+                margin-left: 25px;
                 &_button {
                     height: 60px;
-                    margin-right: 45px;
+                    margin-right: 34px;
                 }
             }
             &_image {
-                margin-left: 40px;
+                margin-left: 0;
             }
         }
     }
@@ -1522,6 +1532,7 @@ footer {
         height: 740px;
         &_header {
             margin-bottom: 10px;
+            padding-left: 0;
         }
         &_container {
             width: auto;
@@ -1531,7 +1542,7 @@ footer {
                 margin: 0 auto;
                 &_img {
                     width: 200px;
-                    margin-left: 10px;
+                    margin-left: 0;
                 }
                 &_block {
                     margin: 0 auto;
@@ -1546,8 +1557,14 @@ footer {
             }
         }
         &_btnwrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: 30px;
             &_prev, &_next {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 background-color: $first-color;
                 border-radius: 100%;
                 width: 40px;
@@ -1555,6 +1572,12 @@ footer {
                 &_img {
                     width: 17px;
                     height: 17px;
+                }
+            }
+            &_next {
+                margin-left: 10px;
+                &_img {
+                    transform: rotate(180deg);
                 }
             }
         }
@@ -1570,7 +1593,7 @@ footer {
             padding-top: 88px;
             &_text {
                 width: 244px;
-                margin-left: 50px;
+                margin-left: 30px;
                 &_header {
                     width: 244px;
                 }
@@ -1579,19 +1602,27 @@ footer {
                 }
                 &_wrap {
                     width: 180px;
+                    &_button {
+                        width: 200px;
+                        height: 60px;
+                        font-size: 14px;
+                    }
                     &_descr {
                         display: none;
                     }
                 }
             }
-            &_image {
-                margin-left: 24px;
+            &_image {      
+                margin-left: 10px;
             }
         }
     }
     .quality {
         height: 620px;
         &_container {
+            @media screen and (max-width:520px) {
+                margin-left: 28px;
+            }
             &_text {
                 width: 244px;
                 &_header {
@@ -1646,7 +1677,7 @@ footer {
         &_wrap {
             margin-top: 60px;
             &_photo {
-                width: 100%;
+                width: 100vw;
             }
         }
     }
