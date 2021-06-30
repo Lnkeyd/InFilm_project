@@ -1601,7 +1601,7 @@ footer {
                     width: 244px;
                 }
                 &_wrap {
-                    width: 180px;
+                    width: 200px;
                     &_button {
                         width: 200px;
                         height: 60px;
@@ -1638,6 +1638,11 @@ footer {
                 }
                 &_wrap {
                     width: 200px;
+                    &_btn {
+                        width: 200px;
+                        height: 60px;
+                        font-size: 14px;
+                    }
                     &_descr {
                         display: none;
                     }

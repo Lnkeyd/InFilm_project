@@ -2038,7 +2038,7 @@ footer .container_secondline {
     width: 244px;
   }
   .individuality_container_text_wrap {
-    width: 180px;
+    width: 200px;
   }
   .individuality_container_text_wrap_button {
     width: 200px;
@@ -2079,6 +2079,11 @@ footer .container_secondline {
   }
   .quality_container_text_wrap {
     width: 200px;
+  }
+  .quality_container_text_wrap_btn {
+    width: 200px;
+    height: 60px;
+    font-size: 14px;
   }
   .quality_container_text_wrap_descr {
     display: none;
