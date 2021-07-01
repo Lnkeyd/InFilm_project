@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/css/lightbox.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
     </style>
@@ -131,7 +132,7 @@
     </section>
     <section class="reviews">
         <div class="reviews_header">Более 1300 клиентов по всей России</div>
-        <div class="reviews_card">
+        <div class="reviews_card" id="card1">
             <div class="reviews_card_text">
                 <img class="reviews_card_text_quote" src="img/quotes.svg">
                 <div class="reviews_card_text_subheader">«Фраза из отзыва»</div>
@@ -143,6 +144,20 @@
                 <img class="reviews_card_client_img" src="img/Female.svg">
                 <div class="reviews_card_client_name">Алла Иванова</div>
                 <div class="reviews_card_client_city">Москва</div>
+            </div>
+        </div>
+        <div class="reviews_card" id="card2">
+            <div class="reviews_card_text">
+                <img class="reviews_card_text_quote" src="img/quotes.svg">
+                <div class="reviews_card_text_subheader">«Фраза из отзыва»</div>
+                <div class="reviews_card_text_descr">«С другой стороны рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
+                    <br><br>С другой стороны укрепление и развитие структуры позволяет выполнять важные задания по разработке модели развития..»</div>
+                <a class="reviews_card_text_link" href="#">Читать отзывы</a>
+            </div>
+            <div class="reviews_card_client">
+                <img class="reviews_card_client_img" src="img/Male.svg">
+                <div class="reviews_card_client_name">Андрей Петров</div>
+                <div class="reviews_card_client_city">Саратов</div>
             </div>
         </div>
         <div class="reviews_btnwrap">
@@ -158,12 +173,29 @@
         <div class="clients_header">Смотрите примеры выполненных работ</div>
         <div class="clients_subheader">Фото клиентов из нашего instagram</div>
         <div class="clients_wrap">
-            <img class="clients_wrap_photo" id="photo1" src="img/photo1.jpg">
-            <img class="clients_wrap_photo" id="photo2" src="img/photo2.jpg">
+            <a href="img/photo1.jpg" class="clients_wrap_photo" data-lightbox="image">
+                <img id="photo1" src="img/photo1.jpg">
+            </a>
+            <a href="img/photo2.jpg" class="clients_wrap_photo" data-lightbox="image">
+                <img id="photo1" src="img/photo2.jpg">
+            </a>
+            <a href="img/photo3.jpg" class="clients_wrap_photo" data-lightbox="image">
+                <img id="photo1" src="img/photo3.jpg">
+            </a>
+            <a href="img/photo4.jpg" class="clients_wrap_photo" data-lightbox="image">
+                <img id="photo1" src="img/photo4.jpg">
+            </a>
+            <a href="img/photo5.jpg" class="clients_wrap_photo" data-lightbox="image">
+                <img id="photo1" src="img/photo5.jpg">
+            </a>
+            <a href="img/photo6.jpg" class="clients_wrap_photo" data-lightbox="image">
+                <img id="photo1" src="img/photo6.jpg">
+            </a>
+            <!-- <img class="clients_wrap_photo" id="photo2" src="img/photo2.jpg">
             <img class="clients_wrap_photo" id="photo3" src="img/photo3.jpg">
             <img class="clients_wrap_photo" id="photo4" src="img/photo4.jpg">
             <img class="clients_wrap_photo" id="photo5" src="img/photo5.jpg">
-            <img class="clients_wrap_photo" id="photo6" src="img/photo6.jpg">
+            <img class="clients_wrap_photo" id="photo6" src="img/photo6.jpg"> -->
         </div>
     </section>
     <section class="form">
@@ -198,5 +230,7 @@
             <div class="container_secondline">©InFilm.ru, 2021 | Название компании или ИП ОГРН 0000000000000</div>
         </div>
     </footer>
+<script src="/script.js"></script>
+<script src="/dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html>

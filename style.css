@@ -524,6 +524,10 @@ header {
   text-align: center;
 }
 
+.reviews > #card2 {
+  display: none;
+}
+
 .reviews_card {
   width: 1173px;
   height: 524px;
@@ -672,7 +676,21 @@ header {
 }
 
 .clients_wrap_photo {
-  width: calc(100%/3 - 9*2px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.clients_wrap_photo > img {
+  width: 100%;
+}
+
+.clients_wrap_photo > img:hover {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .form {
@@ -2121,6 +2139,7 @@ footer .container_secondline {
   }
   .clients_wrap_photo {
     width: 100vw;
+    height: 100%;
   }
   .form_card {
     width: 258px;

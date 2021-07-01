@@ -372,6 +372,9 @@ header {
         font-size: 48px;
         text-align: center;
     }
+    >#card2 {
+        display: none;
+    }
     &_card {
         width: 1173px;
         height: 524px;
@@ -419,6 +422,9 @@ header {
                 align-self: center;
                 font-size: 16px;
                 color: #A6AEB6;
+            }
+            &_img {
+                // width: 156px;
             }
         }
     }
@@ -473,7 +479,16 @@ header {
         justify-content: center;
         gap: 9px;
         &_photo {
-            width: calc(100%/3 - 9*2px);
+            display: flex;
+            width: 32%;
+            // width: calc(100%/3 - 9*2px);
+            transition: 0.5s;
+            >img {
+                width: 100%;
+            }
+        }
+        &_photo>img:hover {
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         }
     }
 }
@@ -1683,6 +1698,7 @@ footer {
             margin-top: 60px;
             &_photo {
                 width: 100vw;
+                height: 100%;
             }
         }
     }
