@@ -8,6 +8,12 @@ const nextCli = document.querySelector(".reviews_btnwrap_next")
 const card = document.querySelectorAll(".reviews_card")
 let slideCli = 0
 
+for (let k; k=0; k++)
+{
+    if (card > k)
+        card.style.display = "none"
+}
+
 function forSlides(mas, slide) {
     for (let i = 0; i<mas.length; i++) {
         if (i == slide) {
