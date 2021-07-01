@@ -183,6 +183,7 @@ header {
 }
 
 .main_container_text_button {
+  cursor: pointer;
   width: 263px;
   height: 88px;
   background: #FED84C;
@@ -199,6 +200,10 @@ header {
   font-size: 18px;
   font-weight: bold;
   margin-top: 40px;
+}
+
+.main_container_text_button:hover {
+  background: #ffd231;
 }
 
 .main_container_image {
@@ -285,6 +290,7 @@ header {
 }
 
 .catalog_container_card_block_btn {
+  cursor: pointer;
   width: 191px;
   height: 68px;
   background: #5245B0;
@@ -303,6 +309,10 @@ header {
   color: #FFFFFF;
   font-weight: bold;
   font-size: 18px;
+}
+
+.catalog_container_card_block_btn:hover {
+  background-color: #433899;
 }
 
 .individuality {
@@ -369,6 +379,7 @@ header {
 }
 
 .individuality_container_text_wrap_button {
+  cursor: pointer;
   width: 249px;
   height: 88px;
   background-color: #FED84C;
@@ -385,6 +396,10 @@ header {
   font-size: 18px;
   font-weight: 700;
   margin-top: 40px;
+}
+
+.individuality_container_text_wrap_button:hover {
+  background: #ffd231;
 }
 
 .individuality_container_text_wrap_descr {
@@ -466,6 +481,7 @@ header {
 }
 
 .quality_container_text_wrap_btn {
+  cursor: pointer;
   width: 263px;
   height: 88px;
   background: #5245B0;
@@ -482,6 +498,10 @@ header {
   color: #FFFFFF;
   font-weight: bold;
   font-size: 18px;
+}
+
+.quality_container_text_wrap_btn:hover {
+  background: #433899;
 }
 
 .quality_container_text_wrap_descr {
@@ -646,6 +666,10 @@ header {
 .reviews_btnwrap_next_img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.reviews_btnwrap_prev:hover, .reviews_btnwrap_next:hover {
+  background-color: #433899;
 }
 
 .clients_header {
@@ -820,6 +844,10 @@ header {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+}
+
+.form_card_wrap_btn:hover {
+  background: #433899;
 }
 
 .form_card_container {

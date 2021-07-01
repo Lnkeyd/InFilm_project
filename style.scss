@@ -2,7 +2,7 @@ $label: #F2F6FA;
 $first-color: #5245B0;
 $second-color:  #FED84C;
 $first-hover: #433899;
-$second-hover:  #e9c440;
+$second-hover:  #ffd231;
 
 ::placeholder {
     color: #7E868E;
@@ -114,29 +114,33 @@ header {
                 align-items: center;
                 border-radius: 5px;
             }
-        &_header {
-            font-weight: 600;
-            font-size: 48px;
-            line-height: 60px;
-            margin-top: 24px;
-        }
-        &_descr {
-            font-size: 21px;
-            line-height: 30px;
-            margin-top: 24px;
-        }
-        &_button {
-            width: 263px;
-            height: 88px;
-            background: $second-color;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 40px;
-        }
+            &_header {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 60px;
+                margin-top: 24px;
+            }
+            &_descr {
+                font-size: 21px;
+                line-height: 30px;
+                margin-top: 24px;
+            }
+            &_button {
+                cursor: pointer;
+                width: 263px;
+                height: 88px;
+                background: $second-color;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 40px;
+            }
+            &_button:hover {
+                background: $second-hover;
+            }
         }
         &_image {
             // margin-left: 30px;
@@ -201,6 +205,7 @@ header {
                     margin-top: 28px;
                 }
                 &_btn {
+                    cursor: pointer;
                     width: 191px;
                     height: 68px;
                     background: $first-color;
@@ -213,6 +218,9 @@ header {
                     color: #FFFFFF;
                     font-weight: bold;
                     font-size: 18px;
+                }
+                &_btn:hover {
+                    background-color: $first-hover;
                 }
             }
         }
@@ -261,6 +269,7 @@ header {
                 width: 480px;
                 display: flex;
                 &_button {
+                    cursor: pointer;
                     width: 249px;
                     height: 88px;
                     background-color: $second-color;
@@ -271,6 +280,9 @@ header {
                     font-size: 18px;
                     font-weight: 700;
                     margin-top: 40px;
+                }
+                &_button:hover {
+                    background: $second-hover;
                 }
                 &_descr {
                     font-size: 14px;
@@ -332,6 +344,7 @@ header {
                 display: flex;
                 margin-top: 52px;
                 &_btn {
+                    cursor: pointer;
                     width: 263px;
                     height: 88px;
                     background: $first-color;
@@ -342,6 +355,9 @@ header {
                     color: #FFFFFF;
                     font-weight: bold;
                     font-size: 18px;
+                }
+                &_btn:hover {
+                    background: $first-hover;
                 }
                 &_descr {
                     margin-left: 20px;
@@ -455,6 +471,9 @@ header {
             &_img {
                 transform: rotate(180deg);
             }
+        }
+        &_prev:hover, &_next:hover {
+            background-color: $first-hover;
         }
     }
 }
@@ -589,6 +608,9 @@ header {
                 font-style: normal;
                 font-weight: bold;
                 font-size: 18px;
+            }
+            &_btn:hover {
+                background: $first-hover;
             }
         }
         &_container {
