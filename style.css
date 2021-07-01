@@ -704,11 +704,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 32%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .clients_wrap_photo > img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   width: 100%;
 }
 
